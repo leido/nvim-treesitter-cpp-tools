@@ -278,7 +278,7 @@ function M.imp_func(range_start, range_end, custom_cb)
             output = output .. (template_statements and template_statements .. '\n' or '') ..
                                 (fun.ret_type and fun.ret_type .. ' ' or '' ) ..
                                 classes_name
-                                .. fun.fun_dec .. '\n{\n}\n'
+                                .. fun.fun_dec .. ' {\n}\n'
         end
     end
 
